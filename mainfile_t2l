@@ -4,6 +4,7 @@ import time
 import plistlib
 import random
 
+# tradução
 language_swap = int(input("1 - English \n2 - Português \n> "))
 
 while language_swap == 1:
@@ -24,6 +25,7 @@ while language_swap == 2:
     time.sleep(0.1)
     print(".")
     time.sleep(0.1)
+    # Menu principal
     option = int(input("1 - Leet para Texto \n2 - Texto para Leet \n> "))
     while option == 2:
      option_type = int(input("\nOpção escolhida: Texto para Leet "
