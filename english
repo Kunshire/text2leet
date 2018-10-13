@@ -1,0 +1,58 @@
+import sys
+import time
+import plistlib
+import random
+
+#English build for 'Text2Leet'
+
+print("Text2Leet v0.1")
+print(".")
+time.sleep(0.1)
+print(".")
+time.sleep(0.1)
+print(".")
+time.sleep(0.1)
+print(".")
+time.sleep(0.1)
+print(".")
+time.sleep(0.1)
+print(".")
+time.sleep(0.1)
+option = int(input("1 - Leet to Text \n2 - Text to Leet \n> "))
+
+while option == 2:
+    option_type = int(input("\nText to Leet "
+                            "\nHow would you like to change your text?"
+                            "\n1 - Let's change them to numbers (1337)"
+                            "\n2 - I'd prefer to change them to symbols (!&&+)"
+                            "\n3 - I prefer it to work randomly ({*11) \nChoose: "))
+
+    while option_type == 1:
+
+        itl = input("\nText to numbers: ")
+        # itl = input text leet
+        list_ttl = list(itl)
+        print("Converting ", list_ttl, "to Leet...")
+
+        # 'A' CONVERTING
+
+        if list_ttl[0] == 'a':
+            list_ttl[0] = '4'
+            print(list_ttl)
+
+        if list_ttl[0] == 'A':
+            list_ttl[0] = '4'
+            print(list_ttl)
+            option = int(input("Return to menu? \n1 - Yes \n2 - No \n>"))
+
+        # 'B' CONVERTING
+
+        if list_ttl[0] == 'b':
+            rand_value = random.choice(['8', '6', '13', '8', '6', '13', '8', '6', '13', '8', '6', '13'])
+            list_ttl[0] = rand_value
+            print(list_ttl)
+
+        if list_ttl[0] == 'B':
+            rand_value = random.choice(['8', '6', '13', '8', '6', '13', '8', '6', '13', '8', '6', '13'])
+            list_ttl[0] = rand_value
+            print(list_ttl)
